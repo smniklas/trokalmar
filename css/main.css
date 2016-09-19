@@ -1,0 +1,25 @@
+/*All things header*/
+.header{
+    position:absolute;
+    width:100%;
+    height: 15%;
+    background-color: yellow;
+    margin-top: 0;
+}
+/*All things menu*/
+.menu{
+    position:absolute;
+    left:0;
+    bottom:0;
+    height:85%;
+    width:10%;
+    background-color: green;
+}
+/*All things footer*/
+.footer{
+    position:absolute;
+    width:100%;
+    height:10%;
+    bottom:0;
+    background-color: black;
+}

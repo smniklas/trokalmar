@@ -7,10 +7,10 @@ html{
     position:absolute;
     width:100%;
     height: 15%;
-    background-color:#F7CA18;
     margin:0;
     top:0;
     left:0;
+    text-align:center;
 }
 .header p{
     margin:0;
@@ -50,28 +50,28 @@ html{
 }
 
 .menu-hem{
-    background-color:#446CB3;
+    background-color:#9A12B3;
 }
 .menu-historik{
-    background-color:#F89406;
+    background-color:#9A12B3;
 }
 .menu-motesplan{
-    background-color:#F22613;
+    background-color:#9A12B3;
 }
 .menu-masterrad{
-    background-color:#663399;
+    background-color:#9A12B3;
 }
 .menu-lokaler{
-    background-color:#00B16A;
+    background-color:#9A12B3;
 }
 .menu-kontaktaoss{
-    background-color:#F64747;
+    background-color:#9A12B3;
 }
 .menu-aktiviteter{
-    background-color:#1F3A93;
+    background-color:#9A12B3;
 }
 .menu-gallery{
-    background-color:#4183D7;
+    background-color:#9A12B3;
 }
 /*All things content*/
 .content-wrapper{
@@ -81,52 +81,59 @@ html{
     right:25%;
     bottom:15%;
 }
+.text-contact{
+    position:absolute;
+    left:0;
+}
+.text-contact2{
+    position:absolute;
+    right:55%;
+}
 .content-title-hem{
     border-left-style:solid;
     border-width:100px;
-    border-color:#446CB3;
+    border-color:#9A12B3;
 }
 .content-title-historik{
     border-left-style:solid;
     border-width:100px;
-    border-color:#F89406;
+    border-color:#9A12B3;
 }
 .content-title-motesplan{
     border-left-style:solid;
     border-width:100px;
-    border-color:#F22613;
+    border-color:#9A12B3;
 }
 .content-title-masterrad{
     border-left-style:solid;
     border-width:100px;
-    border-color:#663399;
+    border-color:#9A12B3;
 }
 .content-title-lokaler{
     border-left-style:solid;
     border-width:100px;
-    border-color:#00B16A;
+    border-color:#9A12B3;
 }
 .content-title-kontakt{
     border-left-style:solid;
     border-width:100px;
-    border-color:#F64747;
+    border-color:#9A12B3;
 }
 .content-title-aktiviteter{
     border-left-style:solid;
     border-width:100px;
-    border-color:#1F3A93;
+    border-color:#9A12B3;
 }
 .content-title-gallery{
     border-left-style:solid;
     border-width:100px;
-    border-color:#4183D7;
+    border-color:#9A12B3;
 }
 /*All things footer*/
 .footer{
     position:absolute;
     bottom:0;
     right:36%;
-    background-color:white;
     font-size:14px;
 }
 .trohemsidalink{

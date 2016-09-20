@@ -121,3 +121,20 @@ html{
     border-width:100px;
     border-color:#4183D7;
 }
+/*All things footer*/
+.footer{
+    position:absolute;
+    bottom:0;
+    right:36%;
+    background-color:white;
+    font-size:14px;
+}
+.trohemsidalink{
+    color:black;
+}
+.searchminds{
+    position:absolute;
+    bottom:0;
+    right:0;
+    font-size:8px;
+}

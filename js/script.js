@@ -96,7 +96,7 @@ const Menu_Handler = {
             Menu_Handler.menu_page_transitions(classArray,e);
             setTimeout(function(){
                 window.location = goTo;
-            },800);
+            },700);
         });
         $("#menu-id-historik-link").click(function(e){
             e.preventDefault();
@@ -104,7 +104,7 @@ const Menu_Handler = {
             Menu_Handler.menu_page_transitions(classArray,e);
             setTimeout(function(){
                 window.location = goTo;
-            },800);;
+            },700);
         });
         $("#menu-id-plan-link").click(function(e){
             e.preventDefault();
@@ -112,7 +112,7 @@ const Menu_Handler = {
             Menu_Handler.menu_page_transitions(classArray,e);
             setTimeout(function(){
                 window.location = goTo;
-            },800);
+            },700);
         });
         $("#menu-id-masterrad-link").click(function(e){
             e.preventDefault();
@@ -120,7 +120,7 @@ const Menu_Handler = {
             Menu_Handler.menu_page_transitions(classArray,e);
             setTimeout(function(){
                 window.location = goTo;
-            },800);
+            },700);
         });
         $("#menu-id-lokaler-link").click(function(e){
             e.preventDefault();
@@ -128,7 +128,7 @@ const Menu_Handler = {
             Menu_Handler.menu_page_transitions(classArray,e);
             setTimeout(function(){
                 window.location = goTo;
-            },800);
+            },700);
         });
         $("#menu-id-kontakt-link").click(function(e){
             e.preventDefault();
@@ -136,7 +136,7 @@ const Menu_Handler = {
             Menu_Handler.menu_page_transitions(classArray,e);
             setTimeout(function(){
                 window.location = goTo;
-            },800);
+            },700);
         });
         $("#menu-id-aktiviteter-link").click(function(e){
             e.preventDefault();
@@ -144,7 +144,7 @@ const Menu_Handler = {
             Menu_Handler.menu_page_transitions(classArray,e);
             setTimeout(function(){
                 window.location = goTo;
-            },800);
+            },700);
         });
         $("#menu-id-gallery-link").click(function(e){
             e.preventDefault();
@@ -152,7 +152,7 @@ const Menu_Handler = {
             Menu_Handler.menu_page_transitions(classArray,e);
             setTimeout(function(){
                 window.location = goTo;
-            },800);
+            },700);
         });
     },
     menu_load_animations:function(){
@@ -162,55 +162,64 @@ const Menu_Handler = {
                 $("#menu-id-hem").stop().animate({ width:"100%" }, 300);
                 $("#menu-id-hem").removeClass("menu-width-min");
                 $("#menu-id-hem").unbind('mouseenter mouseleave');
+                $(".content-wrapper").fadeIn();
                 $("#menu-id-hem-link").show()
                 break;
             case "historik":
-                $("#menu-id-historik").animate({ width:"100%" }, 500);
+                $("#menu-id-historik").animate({ width:"100%" }, 300);
                 $("#menu-id-historik").removeClass("menu-width-min");
                 $("#menu-id-historik").unbind('mouseenter mouseleave');
+                $(".content-wrapper").fadeIn();
                 $("#menu-id-historik-link").show();
                 break;
             case "motesplan":
-                $("#menu-id-plan").stop().animate({ width:"100%" }, 500);
+                $("#menu-id-plan").stop().animate({ width:"100%" }, 300);
                 $("#menu-id-plan").removeClass("menu-width-min");
                 $("#menu-id-plan").unbind('mouseenter mouseleave');
+                $(".content-wrapper").fadeIn();
                 $("#menu-id-plan-link").show();
                 break;
             case "masterrad":
-                $("#menu-id-masterrad").stop().animate({ width:"100%" }, 500);
+                $("#menu-id-masterrad").stop().animate({ width:"100%" }, 300);
                 $("#menu-id-masterrad").removeClass("menu-width-min");
                 $("#menu-id-masterrad").unbind('mouseenter mouseleave');
+                $(".content-wrapper").fadeIn();
                 $("#menu-id-masterrad-link").show();
                 break;
             case "lokaler":
-                $("#menu-id-lokaler").stop().animate({ width:"100%" }, 500);
+                $("#menu-id-lokaler").stop().animate({ width:"100%" }, 300);
                 $("#menu-id-lokaler").removeClass("menu-width-min");
                 $("#menu-id-lokaler").unbind('mouseenter mouseleave');
+                $(".content-wrapper").fadeIn();
                 $("#menu-id-lokaler-link").show();
                 break;
             case "kontakt":
-                $("#menu-id-kontakt").stop().animate({ width:"100%" }, 500);
+                $("#menu-id-kontakt").stop().animate({ width:"100%" }, 300);
                 $("#menu-id-kontakt").removeClass("menu-width-min");
                 $("#menu-id-kontakt").unbind('mouseenter mouseleave');
+                $(".content-wrapper").fadeIn();
                 $("#menu-id-kontakt-link").show();
                 break;
             case "aktiviteter":
                 console.log(x);
-                $("#menu-id-aktiviteter").stop().animate({ width:"100%" }, 500);
+                $("#menu-id-aktiviteter").stop().animate({ width:"100%" }, 300);
                 $("#menu-id-aktiviteter").removeClass("menu-width-min");
                 $("#menu-id-aktiviteter").unbind('mouseenter mouseleave');
+                $(".content-wrapper").fadeIn();
                 $("#menu-id-aktiviteter-link").show();
                 break;
             case "bildgalleri":
-                $("#menu-id-gallery").stop().animate({ width:"100%" }, 500);
+                $("#menu-id-gallery").stop().animate({ width:"100%" }, 300);
                 $("#menu-id-gallery").removeClass("menu-width-min");
                 $("#menu-id-gallery").unbind('mouseenter mouseleave');
+                $(".content-wrapper").fadeIn();
                 $("#menu-id-gallery-link").show();
                 break;
         }
             
     },
     menu_page_transitions:function(carray){
+        $(".content-wrapper").fadeOut();
         var ClassArray = carray;
         for(var x = 0; x < ClassArray.length; x++){
             var currentid = $("#" + ClassArray[x])

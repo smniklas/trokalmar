@@ -1,6 +1,8 @@
 /*All things wrapper*/
 html{
     font-family: 'Oswald', sans-serif;
+    width:100%;
+    height:100%;
 }
 /*All things header*/
 .header{
@@ -8,7 +10,7 @@ html{
     width:100%;
     height: 15%;
     margin:0;
-    top:0;
+    top:2%;
     left:0;
     text-align:center;
 }
@@ -75,11 +77,14 @@ html{
 }
 /*All things content*/
 .content-wrapper{
+    font-family: 'Raleway', sans-serif;
     position:absolute;
     top:25%;
     width:50%;
     right:25%;
     bottom:15%;
+    font-weight: 300;
+    line-height: 150%;
 }
 .text-contact{
     position:absolute;
@@ -130,14 +135,11 @@ html{
     border-color:#9A12B3;
 }
 /*All things footer*/
-.footer{
-    position:absolute;
-    bottom:0;
-    right:36%;
-    font-size:14px;
-}
+
 .trohemsidalink{
+    position: absolute;
     color:black;
+    margin:0;
 }
 .searchminds{
     position:absolute;
